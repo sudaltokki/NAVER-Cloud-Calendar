@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    list-style-type: none;
+}
+
+.nav-item {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.header {
+    height: 240px;
+    background-color: #333333;
+}
+
+.header-text {
+    text-align: right;
+    margin: 0 15px;
+}
+
+.header-year {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #03C75A;
+    padding: 0 10px 0 0;
+}
+
+.header-month {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 55px;
+    color: #03C75A;
+    padding: 0 10px 18px 0;
+}
+
+.header-edu {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 45px;
+    color: white;
+    padding: 0 10px 0 0;
+}
+
+.year-month {
+    font-size: 35px;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    display: flex;
+    margin: 25px 0 10px;
+}
+
+.day {
+    width: calc(100% / 7);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 12px;
+}
+
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    border-top: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+}
+
+.date {
+    width: calc(100% / 7);
+    height: 150px;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #D9D9D9;
+    border-left: 1px solid #D9D9D9;
+}
+
+.prev, .next {
+    color: #9c9797 !important;
+}
+
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+    color: #D13E3E;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+    color: #396EE2
+}
+
