@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <title>Ncloud Edu Calendar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <img class="logo" src="./logo.png">
+            <div class="header-text">
+                <div class="header-date">2022년 9월</div>
+                <div class="header-edu">교육일정</div>
+            </div>
+        </div>
+        <div class="btn-list">
+            <div class="dropdown-trigger">전체</div>
+            <div class="dropdown-wrapper hidden">
+                <div class="dropdown-title">교육 레벨</div>
+                <ul class="dropdown-content">
+                    <li class="dropdown-item">
+                        <input type="radio" id="all" name="level"/>
+                        <label for="all">전체</label>
+                    </li>
+                    <li class="dropdown-item">
+                        <input type="radio" id="starter" name="level"/>
+                        <label for="starter">Starter</label>
+                    </li>
+                    <li class="dropdown-item">
+                        <input type="radio" id="intermediate" name="level"/>
+                        <label for="intermediate">Intermediate</label>
+                    </li>
+                    <li class="dropdown-item">
+                        <input type="radio" id="nca" name="level"/>
+                        <label for="nca">NCA</label>
+                    </li>
+                    <li class="dropdown-item">
+                        <input type="radio" id="ncp" name="level"/>
+                        <label for="ncp">NCP</label>
+                    </li>
+                    <li class="dropdown-item">
+                        <input type="radio" id="nce" name="level"/>
+                        <label for="nce">NCE</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="days">
+                <div class="day">일</div>
+                <div class="day">월</div>
+                <div class="day">화</div>
+                <div class="day">수</div>
+                <div class="day">목</div>
+                <div class="day">금</div>
+                <div class="day">토</div>
+            </div>
+            <div class="dates"></div>
+        </div>
+    </div>
+    <div class="detail hidden">
+        <div class="detail-content">
+            <div class="title"></div>
+            <div class="grid">
+                <img src="./arrow.png" class="undo">
+                <div class="middle">
+                    <div class="place">
+                        <div class="box">장소</div>
+                        <div class="place-text text-box"></div>
+                    </div>
+                    <div class="period">
+                        <div class="box">시간</div>
+                        <div class="period-text text-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module", src="./read.js"></script>
+    <script type="module", src="./index.js"></script>
+</body>
+</html>
